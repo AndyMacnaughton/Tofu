@@ -1,6 +1,5 @@
 # Tofu.rb
 require 'sinatra'
-require 'sass'
 require 'slim'
 
 class Tofu < Sinatra::Base

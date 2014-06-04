@@ -7,13 +7,37 @@ html
     meta name="keywords" content="template language"
     meta name="author" content="Me"
 
+    link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'
+
     link href= "/css/styles.css" media="screen, projection" rel="stylesheet" type="text/css"
     link href= "/css/ie.css" rel="stylesheet" type="text/css"
     link href= "/css/print.css" rel="stylesheet" type="text/css"
 
-
   body
-    h1 id="title" = @title
+    .container
+      header
+        ul class="left"
+          h1 = @title
 
-    #content
-      == yield
+        ul class="right"
+          a href="#"
+            h3 John Smith
+
+      aside
+        nav
+          ul
+            li
+              a href="#" Home
+            li
+              a href="#" To Do
+            li
+              a href="#" Contacts
+            li
+              a href="#" Leads
+            li
+              a href="#" Emails
+            li
+              a href="#" Calendar
+
+      #content
+        == yield
