@@ -1,2 +1,3 @@
-require './tofu'
-run Sinatra::Application
+require File.dirname(__FILE__) + '/tofu'
+
+run Tofu
