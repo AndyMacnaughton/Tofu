@@ -4,7 +4,7 @@ ruby "2.1.2"
 gem 'sinatra'
 gem 'slim'
 gem 'compass'
-gem 'bootstrap-sass'
+gem 'scrypt', '~> 1.2.1'
 
 group :development do
   gem 'pg'
